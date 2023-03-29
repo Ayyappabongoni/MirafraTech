@@ -40,3 +40,32 @@ int main()
 	printf("nested struct values are\n");
 	printf("%d %c\n",st.u.s2.c,st.u.s2.d);
 }
+
+
+#include<stdio.h>
+typedef struct ss
+{
+	int a;
+	char ch[10];
+	float b;
+
+	union uu
+	{
+		int x;
+		char y;
+
+		struct 
+		{
+			int c;
+			char d;
+		}s2;
+
+	}u;
+
+}s;
+
+int main()
+{
+s.ch="abhi";
+printf("%s",s.ch);
+}

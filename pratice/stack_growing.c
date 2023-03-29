@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main()
 {
-	int arr[2];
-	if( (&arr[1]-arr[0]) <0)
-	{
+	char arr[2];
+	arr[0]=1;
+	arr[1]=2;
+	if((&arr[1]-&arr[0]) <0)
 		printf("down\n");
-	}
 	else 
 		printf("up\n");
 	printf("arr[1]: %p\n",&arr[1]);
