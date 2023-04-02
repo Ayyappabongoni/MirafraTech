@@ -1,20 +1,27 @@
 #include<stdio.h>
+#include<stdlib.h>
 void function(char s1[],char s2[]);
 int main()
 {
-	char s[20];
-	char d[30];
+	int a;
+	printf("enter the size\n");
+	scanf("%d",&a);
+	char *d=(char *)malloc(a*sizeof(char));
+	char *s=(char *)malloc(a*sizeof(char));
 	printf("enter 1st string\n");
-	scanf("%19[^\n]s",s);
-	function(s,d);
+	scanf(" %[^\n]s",s);
+	function(d,s);
 	printf("%s\n",d);
+	free(d);
+	free(s);
 }
 
-void function(char s1[],char s2[])
+void function(char *d,char *s)
 {
 	int i=0;
-	for(i=0;s1[i]!=0;i++)
+	for(i=0;*(s+i)!=0;i++)
 	{
-		s2[i]=s1[i];
+		*(d+i)=*(s+i);
 	}
+	*(d+i)=0;
 }
