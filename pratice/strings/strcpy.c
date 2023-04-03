@@ -12,6 +12,7 @@ int main()
 	scanf(" %[^\n]s",s);
 	function(d,s);
 	printf("%s\n",d);
+	printf("%s\n",s);
 	free(d);
 	free(s);
 }

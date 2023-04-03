@@ -12,7 +12,7 @@ int main()
 			a=a>>1;
 		}
 	}
-	if(c%2==0)
+	if(c && c%2==0||a==1)
 	{
 		printf("power\n");
 	}

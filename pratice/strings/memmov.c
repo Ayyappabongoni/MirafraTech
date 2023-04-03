@@ -6,12 +6,11 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-int length(char *s);
-void mem_mov(char *d,char *s,int a);
+void* mem_mov(void* d, const void* s, int num);
 int main()
 {
-	char *s=(char *)malloc(20*sizeof(char));//create memory using malloc
-	char *d=(char *)malloc(10*sizeof(char));
+	char *s=(char *)malloc(10*sizeof(char));//create memory using malloc
+	char *d=(char *)malloc(5*sizeof(char));
 	int c;
 	printf("enter the source destination and size\n");
 	scanf("%s %s %d",s,d,&c);
@@ -19,32 +18,19 @@ int main()
 	printf("%s\n",d);
 }
 
-void mem_mov(char *d,char *s,int a)
-{
-	int i=0;
-	int d_len=length(d);//length find out for destination string  
-	if(d_len>a)//check dest size is enough or not
-	{
-		for(i=0;i<a;i++)
-		{
-			d[i]=s[i];
-		}
-	}
-	else
-	{
-		for(i=a;i>0;i--)//if size is not enough then copy from reverse as many as you can till dest fill
-		{
-			d[i]=s[i];
-		}
-	}
-d[i]=0;//then add null
-}
 
-int length(char *s)
-{int i=0,c=0;
-	for(i=0;s[i]!=0;i++)
-	{
-		c++;
+void* mem_mov(void* d, const void* s, int num) {
+	char* dest = (char*) d;
+	const char* src = (const char*) s;
+	int i;
+	if (dest > src) {
+		for (i = num; i > 0; i--) {
+			dest[i-1] = src[i-1];//reverse printing
+		}
+	} else if (dest < src) {
+		for (i = 0; i < num; i++) {//normal printing
+			dest[i] = src[i];
+		}
 	}
-	return c;
+
 }
