@@ -1,0 +1,11 @@
+String is a sequence of characters terminated by a null character ('\0'), while an array can store any type of data including characters.
+
+Strings are usually used to represent text data, while arrays can be used to store any kind of data including text, numbers, and other data types.
+
+String literals (e.g. "hello") are stored in a read-only data segment of the program's memory, while arrays are stored on the stack or the heap depending on how they are declared and used.
+
+There are specialized functions for working with strings, such as strlen(), strcpy(), strcat(), strcmp(), etc. These functions are not applicable to arrays in general.
+
+Arrays have a fixed size that is determined at the time of declaration, while strings can have variable length and can be resized using functions like malloc() and realloc().
+
+Arrays can be multidimensional (i.e. arrays of arrays), while strings are usually represented as one-dimensional arrays of characters.
