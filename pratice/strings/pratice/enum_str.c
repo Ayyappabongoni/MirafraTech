@@ -9,12 +9,12 @@ enum names
 
 int main()
 {
+int p;
 	enum names x;
 	char *s[]={"mon","tue","wed","fri","thu","sat","sun"};
-	int a;
-	printf("enter from 0-6\n");
-	scanf("%d",&a);
+	printf("%d %d %d %d %d %d %d\n",a,b,c,d,e,f,g);
+	scanf("%d",&p);
 
-	x=a;
-	printf("to day is %s\n",s[x]);
+	
+	printf("to day is %s\n",s[p]);
 }
