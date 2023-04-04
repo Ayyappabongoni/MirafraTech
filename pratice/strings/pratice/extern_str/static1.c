@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-const static char s[10]={"kernel"};//const modifi not possible
+static char s[10]={"kernel"};//const modifi not possible
 char *p=s;
 
 int fun();

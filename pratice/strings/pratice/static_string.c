@@ -28,5 +28,5 @@ printf("main\n");
 int fun(char s)
 {
 printf("%s\n",s);
-}
-*/
+}*/
+

@@ -8,7 +8,7 @@ int main()
 {
 
 int a=0;
-fun(a);
+//fun(a);
 printf("main:%s\n",s);
 
 }

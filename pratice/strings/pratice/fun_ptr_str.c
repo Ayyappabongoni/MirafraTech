@@ -6,7 +6,6 @@ int main()
 	void (*fptr)(char *)=fun;
 	(*fptr)(s);
 	printf("fun:%s\n",s);
-
 }
 
 void fun(char *s)

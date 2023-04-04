@@ -9,3 +9,4 @@ There are specialized functions for working with strings, such as strlen(), strc
 Arrays have a fixed size that is determined at the time of declaration, while strings can have variable length and can be resized using functions like malloc() and realloc().
 
 Arrays can be multidimensional (i.e. arrays of arrays), while strings are usually represented as one-dimensional arrays of characters.
+

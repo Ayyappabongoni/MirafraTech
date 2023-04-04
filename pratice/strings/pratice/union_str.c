@@ -6,7 +6,7 @@ struct string
 	char d[10];
 };
 int main()
-{int n=10;
+{int n=5;
 	//char s[10];
 	struct string str;
 	printf("enter the string\n");
