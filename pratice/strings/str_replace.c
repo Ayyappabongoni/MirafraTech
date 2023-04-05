@@ -18,7 +18,7 @@ int function(char *s,char *sub,char *rep)
 		s[a]==sub[i];//check remining index
 		c++;
 	}
-	if(a==c&&sub[i]==0)
+	if(sub[i]==0)
 	{
 		for(i=0;rep[i]!=0;i++)
 		{
