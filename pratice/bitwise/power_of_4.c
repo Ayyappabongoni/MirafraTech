@@ -1,18 +1,10 @@
 #include<stdio.h>
 int main()
 {
-	int a,c=0;
+	int n;
 	printf("enter the value\n");
-	scanf("%d",&a);
-	if((a&(a-1))==0)
-	{
-		while((a&1)==0)
-		{
-			c++;
-			a=a>>1;
-		}
-	}
-	if(c && c%2==0||a==1)
+	scanf("%d",&n);
+	if( (n > 0) && ((n & (n - 1)) == 0) && ((n & 0xAAAAAAAA) == 0))//a=1010 32bits
 	{
 		printf("power\n");
 	}
