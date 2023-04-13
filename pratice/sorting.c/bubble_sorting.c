@@ -27,7 +27,7 @@ int sorting(int *p,int n)
 	int temp;
 	for(i=0;i<n-1;i++)
 	{
-		for(j=0;j<n-1;j++)
+		for(j=0;j<n-i-1;j++)//removing last sorted index
 		{
 			if(p[j]>p[j+1])
 			{
