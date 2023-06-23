@@ -7,8 +7,9 @@ int fun(int);
 int main()
 {
 
+//char s[]="kernel";
 int a=0;
-//fun(a);
+fun(a);
 printf("main:%s\n",s);
 
 }

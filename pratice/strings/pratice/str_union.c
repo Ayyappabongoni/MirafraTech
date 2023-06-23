@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 union student
 {
 char str[10];

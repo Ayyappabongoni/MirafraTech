@@ -16,8 +16,8 @@ strlcpy always null-terminates the destination buffer, whereas strcpy only null-
 int my_stlcpy(char *d,char *s,int size);
 int main()
 {
-	char s[30];
-	char d[30];
+	char s[6];
+	char d[7];
 	int a;
 	printf("enter the source \n");
 	scanf("%s",s);

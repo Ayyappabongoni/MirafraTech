@@ -1,3 +1,4 @@
+//best and worst o(nlogn)
 #include<stdio.h>
 void merg_sort(int arr[],int lb,int ub);
 void merg(int arr[],int lb,int mid,int ub);

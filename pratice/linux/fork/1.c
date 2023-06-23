@@ -16,7 +16,7 @@ int main()
 	{
 		printf("this is child\n");
 		printf("child pid id %d\n",(int)getpid());
-		sleep(2);
+		//sleep(2);
 		exit(99);
 	}
 	else if(ret>0){

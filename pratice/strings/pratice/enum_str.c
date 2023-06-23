@@ -10,7 +10,7 @@ enum names
 int main()
 {
 int p;
-	enum names x;
+//	enum names x;
 	char *s[]={"mon","tue","wed","fri","thu","sat","sun"};
 	printf("%d %d %d %d %d %d %d\n",a,b,c,d,e,f,g);
 	scanf("%d",&p);

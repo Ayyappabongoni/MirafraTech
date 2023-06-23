@@ -11,8 +11,7 @@ typedef struct ss
 		char y;
 
 		struct 
-		{
-			int c;
+		{	int c;
 			char d;
 		}s2;
 

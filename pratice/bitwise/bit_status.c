@@ -5,7 +5,7 @@ int main()
 	printf("enter the bit no and bit\n");
 	scanf("%d%d",&a,&b);
 
-	if(a&(1<<b)!=0)
+	if( (a&(1<<b)) !=(0))
 	{
 		printf("on\n");
 	}

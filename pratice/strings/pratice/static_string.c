@@ -17,7 +17,7 @@ s[0]='x';//modifi is possible
 printf("%s\n",s);
 }*/
 		
-/*int fun(char);
+int fun(char);
 int main()
 {
 static char s[]={"kernel"};//local cannot acess out of loop
@@ -28,5 +28,5 @@ printf("main\n");
 int fun(char s)
 {
 printf("%s\n",s);
-}*/
+}
 

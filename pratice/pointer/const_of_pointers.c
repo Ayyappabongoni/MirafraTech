@@ -38,12 +38,11 @@ int main()
 	//printf("%d",*q);
 	 */
 
-	
-	   int b='a';
-	   int c='b';
-	   int const *q;
-	   q=&b; //address can  change but not value
-	 *q=11;
+	int b='a';
+	int c='b';
+	int const *q;//ptr to const var
+	q=&b; //address can  change but not value
+	*q=11;
 	printf("%d",*q);
 
 	//q=&c;

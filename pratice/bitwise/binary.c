@@ -5,7 +5,7 @@ int main()
 	printf("enter  the no\n");
 	scanf("%d",&a);
 	int i=0;
-	for(i=32;i>=1;i--)
+	for(i=31;i>=0;i--)
 	{
 		if( (a&(1<<i))==0)
 		{

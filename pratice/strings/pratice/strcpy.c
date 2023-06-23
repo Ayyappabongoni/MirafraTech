@@ -8,20 +8,19 @@ int main()
 //char s[7]="master";
 //char d[4]="ker";
 
-//char s[10]="kernelmas";
-//char d[5]="hello";
+char s[10]="kernelmas";
+char d[5]="hello";
 
 //char s[5]="kerne";
 //char d[10];
 
-char s[10]="kernelmas";
- char d[10]="xxx";
+//char s[10]="kernelmas";
+ //char d[10]="xxx";
 
 printf("before\n");
 printf("dest:%s\nsource:%s\n",d,s);
-char *p=strcpy(d,s);
+strcpy(d,s);
 
-printf("pointer:%s\n",p);
 printf(" dest:%s\n",d);
 printf(" sour:%s\n",s);
 }

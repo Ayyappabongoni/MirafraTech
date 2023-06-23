@@ -1,7 +1,8 @@
 #include<stdio.h>
 void myatoi(char *s);
 int main()
-{int a;
+{
+	int a;
 	printf("enter the size\n");
 	scanf("%d",&a);
 	char s[a];

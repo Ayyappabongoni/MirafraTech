@@ -8,6 +8,6 @@ execl("/bin/ls", "ls", "-l", NULL);
 int main()
 {
 	int x=execl("/bin/ls","-a",(char *)0);
-	if(x=-1)
+	if(x==-1)
 		printf("exec is failed\n");
 }

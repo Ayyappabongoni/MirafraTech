@@ -14,12 +14,12 @@ int execvp(const char *file, char *const argv[]);
 #include<unistd.h>
 int main()
 {
-/*	char *command="ps";
+	char *command="ps";
 	char *arr[]={command,"-eaf",NULL};
 	execvp(command,arr);
-*/
 
-char *command="/bin/ps";
+/*char *command="/bin/ps";
 char *arr[]={command,"-eaf",NULL};
 execv(command,arr);
+*/
 }

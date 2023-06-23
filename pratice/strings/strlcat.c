@@ -12,8 +12,8 @@ int length(char *d);
 int main()
 {
 	int x;
-	char s[10];
-	char d[20];
+	char s[6];
+	char d[7];
 	printf("enter source and destenation strings\n");
 	scanf("%s%s",s,d);
 	printf("enter the size to concat\n");

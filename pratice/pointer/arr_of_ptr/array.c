@@ -24,3 +24,8 @@ int fun(int *p[],int n)
 		*p[i]=0;
 	}
 }
+
+/*
+scanf("%d",((*ptr)+i));
+scanf("%d",(*ptr)+i);
+*/
