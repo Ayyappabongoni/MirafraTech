@@ -41,10 +41,11 @@ static ssize_t my_read(struct file *flip, char __user *buffer, size_t length, lo
 {
 	int i=0;
 	printk("read function started...\n");
-	for(i=0;i<length;i++)
+	for(i=*off;i<length;i++)
 	{
 		buffer[i]=s[i+*off];//sending data to usr space
 	}
+	*off = *off + i;
 	buffer[i]=0;
 	return i;
 }
