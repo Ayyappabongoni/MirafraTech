@@ -9,7 +9,7 @@ int main()
 {
 	char buffer[50];
 	char s[]="Mirafra Technologies Hyderabad";
-	int fd=open("/dev/LAST_STRING",O_RDWR);
+	int fd=open("/dev/AYYAPPA",O_RDWR);
 	if(fd==-1){
 		printf("open failed\n");
 		exit(0);
