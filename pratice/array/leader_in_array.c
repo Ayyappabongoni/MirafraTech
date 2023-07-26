@@ -9,6 +9,7 @@
 op(5,9)
 */
 
+
 #include <stdio.h>
 int leader(int *p)
 {   int x=p[0];
@@ -17,29 +18,24 @@ int leader(int *p)
 	{
 		for(j=0;j<=i;j++)
 		{
-			if(p[i]>x)
+			if(p[j]>x)
 			{   
-				x=p[i];//big no
+				x=p[j];//big no
 			}
 		}
-		if(i==0)
-		{
-			y=x;//first big no
-		}
-
 		if(x!=y)
 		{
 			printf("%d ",x);
-			y=x;//assign every big no for nxt comprasion and print
+			y=x;
 		}
 	}
 }
 int main()
 {
-	int arr[7]={1,2,3,4,5,6,7};
+	int arr[7]={12,32,3,2,1,44,6};
 	int (*p)(int *)=leader;
 	(*p)(arr);
-	//    printf("leader is (%d)\n",x);
+	//printf("leader is (%d)\n",x);
 	return 0;
 }
 
