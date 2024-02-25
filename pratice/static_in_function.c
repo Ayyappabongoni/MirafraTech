@@ -17,3 +17,27 @@ int main()
 	function(10);
 
 }
+
+#include <stdio.h>
+
+int function(int a)
+{
+	printf("%d\n",a);
+	a=12;
+	return a;
+}
+int main()
+{static int a=10;
+	/*possible*/
+	static int b;
+	b=function(a);
+
+	/*not possible
+	  static int b=function(a);
+	 */    
+	printf("%d main\n",b);
+
+	return 0;
+}
+
+
