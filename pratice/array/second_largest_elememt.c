@@ -1,6 +1,5 @@
+
 #include<stdio.h>
-
-
 void second(int *p,int n)
 {
 	int temp[n];
@@ -44,3 +43,45 @@ int main()
 	printf("\n");
 
 }
+
+//another logic
+/*
+#include<stdio.h>
+#include<stdlib.h>
+
+void recurssion_function(int *p,int size)
+{
+	int i=0,j=0,large=0,sec_largest=0;
+
+	for(i=0;i<10;i++)
+	{
+
+		if(p[i]>large)
+		{
+			sec_largest=large;
+			large=p[i];
+		}
+		else if(p[i]>sec_largest && p[i]!=large)
+		{
+
+			sec_largest=p[i];
+		}
+	}
+
+	printf("final sec larget is %d\n",sec_largest);
+}
+
+
+int main()
+{
+	int *p=(int *)calloc(10,sizeof(int));
+	printf("enter the elemenbts\n");
+	int i=0;
+	for(i=0;i<10;i++)
+	{
+		scanf("%d",&p[i]);
+	}
+	recurssion_function(p,10);  
+}
+
+*/
